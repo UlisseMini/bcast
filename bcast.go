@@ -38,7 +38,7 @@ func run(nConns int, l net.Listener, stream io.Reader) {
 
 func main() {
 	nConns := flag.Int("m", 1, "amount of connections to accept before streaming")
-	addr := flag.String("a", ":4444", "address to listen on")
+	addr := flag.String("l", ":4444", "address to listen on")
 	proto := flag.String("p", "tcp", "protocol, can be [udp, tcp, udp6, tcp6] etc")
 
 	flag.Parse()
